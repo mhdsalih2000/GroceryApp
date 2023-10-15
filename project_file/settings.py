@@ -74,11 +74,17 @@ WSGI_APPLICATION = 'project_file.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
+   
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'groceryapp',
+        'USER': 'root',
+        'PASSWORD': '12345678',
+        'HOST': 'localhost',  # Set the database host if necessary
+        'PORT': '3306',          # Set the database port if necessary
     }
 }
+
 
 
 # Password validation
